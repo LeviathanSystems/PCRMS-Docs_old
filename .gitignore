@@ -1,1 +1,6 @@
 site/
+lib/
+bin/
+lib64
+include/
+pyvenv.cfg
