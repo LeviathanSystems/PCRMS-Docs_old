@@ -1,0 +1,17 @@
+site_name: Leviathan PCRMS docs
+nav:
+  - Home: index.md
+  - Property Management: property.md
+  - Reservations: reservations.md
+  - Inventory: crm.md
+  - HR: hr.md
+  - Access Control: dac.md
+  - About: about.md
+theme: readthedocs
+repo_url: https://github.com/LeviathanSystems/PCRMS-Docs_old
+site_author: Leviathan Systems
+exclude_docs: |
+  api-config.json    # A file with this name anywhere.
+  /requirements.txt  # Top-level "docs/requirements.txt".
+  *.py               # Any file with this extension anywhere.
+  !/foo/example.py   # But keep this particular file.
