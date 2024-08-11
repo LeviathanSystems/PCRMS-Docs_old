@@ -1,5 +1,4 @@
-# Welcome to accounts
-
+# Welcome to petty cash management
 ### Petty Cash Management
 Our software allows you to manage petty cash efficiently by tracking expenses, reimbursements, and maintaining a detailed record of transactions. With our system, you can easily monitor petty cash balances, generate reports, and ensure compliance with financial policies.
 

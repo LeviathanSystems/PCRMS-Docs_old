@@ -1,12 +1,17 @@
 site_name: Leviathan PCRMS docs
 nav:
   - Home: index.md
-  - Accountant: accountant.md
-  - Property Management: property.md
-  - Reservations: reservations.md
-  - Inventory: crm.md
-  - HR: hr.md
-  - Access Control: dac.md
+  - 'Property':
+    - 'Operations': property.md
+  - 'Accountant': 
+    - 'Petty Cash': accountant.md
+  - Reservations: 
+    - 'Reservations Dashboard': reservations.md
+  - CRM:
+    - Inventory: crm.md
+  - HR:
+    - Dashboard: hr.md
+    - Access Control: dac.md
   - About: about.md
 theme: readthedocs
 repo_url: https://github.com/LeviathanSystems/PCRMS-Docs_old
