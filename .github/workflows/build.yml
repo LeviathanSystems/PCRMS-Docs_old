@@ -31,6 +31,13 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+      - name: Setup Python 3.x
+        uses: actions/setup-python@v4
+        with:
+          python_version: '3.x' # Uses latest 3.x version.
+      - name: Install dependencies
+        # Alternatively: pip install mkdocs
+        run: pip install -r requirements.txt
       - name: Build Docs
         run: mkdocs build
       - name: Configure GitHub Pages
