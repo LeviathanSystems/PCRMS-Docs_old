@@ -42,7 +42,7 @@ Welcome to our collection of recent articles! Below you'll find a list of the la
 max_articles = 10
 for file in sorted_files[:max_articles]:
     modified_time = os.path.getmtime(file)
-    modified_date = datetime.fromtimestamp(modified_time).strftime("%B %d, %Y")
+    modified_date = datetime.fromtimestamp(modified_time).strftime("%B %d, %Y %I:%M %p")
     relative_path = os.path.relpath(file, posts_dir).replace("\\", "/")
 
     # Extract title from the Markdown file
