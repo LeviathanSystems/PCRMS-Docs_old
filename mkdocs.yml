@@ -12,8 +12,51 @@ nav:
   - HR:
     - Dashboard: hr.md
     - Access Control: dac.md
+  - Releases:
+    - '2.0.5': release_notes/2.0.5.md
+    - '2.0.4': release_notes/2.0.4.md
   - About: about.md
-theme: readthedocs
+
+theme:
+  name: material
+  logo: assets/brand/logo.svg
+  favicon: assets/brand/logo-color.png
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # - media: "(prefers-color-scheme: dark)"
+    - scheme: slate
+      accent: amber
+      toggle:
+        icon: material/brightness-2
+        name: "Switch to light mode"
+    # - media: "(prefers-color-scheme: light)"
+    - scheme: default
+      accent: deep purple
+      toggle:
+        icon: material/brightness-5
+        name: "Switch to dark mode"
+  font:
+      text: Noto Sans
+      code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.top
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.path
+    - navigation.indexes
+    - navigation.prune
+    - content.code.copy
+    - toc.follow
+    - announce.dismiss
+    # - content.tabs.link
+    # - content.tooltips
+    # - search.highlight
+extra_css:
+  - assets/css/custom.css
+
 repo_url: https://github.com/LeviathanSystems/PCRMS-Docs_old
 site_author: Leviathan Systems
 exclude_docs: |
@@ -21,8 +64,11 @@ exclude_docs: |
   /requirements.txt  # Top-level "docs/requirements.txt".
   *.py               # Any file with this extension anywhere.
   !/foo/example.py   # But keep this particular file.
+
 plugins:
   - glightbox
+  - search
+
 markdown_extensions:
   - attr_list
   - md_in_html
