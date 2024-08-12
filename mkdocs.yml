@@ -69,7 +69,6 @@ theme:
 extra_css:
   - assets/css/custom.css
 
-repo_url: https://github.com/LeviathanSystems/PCRMS-Docs_old
 site_author: Leviathan Systems
 exclude_docs: |
   api-config.json    # A file with this name anywhere.
