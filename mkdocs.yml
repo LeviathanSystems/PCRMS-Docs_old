@@ -7,6 +7,7 @@ nav:
       - 'Elements': 
         - 'General Info': property/physical/elements.md
         - 'Create Elements': property/physical/create_elements.md
+        - 'Edit Elements': property/physical/edit_elements.md
   - 'Accountant': 
     - 'Accounts':
       - 'General': 'accounts/account.md'
