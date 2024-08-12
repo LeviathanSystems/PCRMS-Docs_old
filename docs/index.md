@@ -5,6 +5,11 @@ Welcome to our collection of recent articles! Below you'll find a list of the la
 
 ---
 
+### [About Leviathan PCRMS](about.md)
+_Last Updated: August 12, 2024_
+
+---
+
 ### [Create and Edit Account](accounts/create_edit_account.md)
 _Last Updated: August 12, 2024_
 
@@ -46,11 +51,6 @@ _Last Updated: August 12, 2024_
 ---
 
 ### [Release Notes: Version 2.0.7](release_notes_weboffice/2.0.7.md)
-_Last Updated: August 12, 2024_
-
----
-
-### [Skipping public release notes for 2.0.6](release_notes_weboffice/2.0.6.md)
 _Last Updated: August 12, 2024_
 
 ---

@@ -9,28 +9,28 @@ Leviathan PCRMS is an integrated platform built to meet the comprehensive needs 
 ## Key Features
 
 ### Property Management
-Leviathan PCRMS offers a wide range of property management functionalities, including:
+#### Leviathan PCRMS offers a wide range of property management functionalities, including
 - **Property Listings**: Easily create, manage, and organize detailed property listings, complete with descriptions, photos, and relevant details.
 - **Lease and Rental Management**: Monitor leases, manage rental agreements, and handle renewals seamlessly to keep everything in order.
 - **Maintenance Management**: Log, assign, and track maintenance tasks, ensuring all property issues are resolved promptly.
 - **Financial Tracking**: Oversee all financial activities, including rent collection, expense management, and financial reporting with ease.
 
 ### Content Resource Management (CRM)
-Our CRM component focuses on the efficient management of digital resources and content, offering features such as:
+#### Our CRM component focuses on the efficient management of digital resources and content, offering features such as:
 - **Resource Organization**: Centralize and categorize all digital content, documents, and resources, making them easily accessible.
 - **Inventory Management**: Track and manage physical and digital inventory in real-time, ensuring you have complete control over your assets.
 - **Document Management**: Securely store and manage important documents like contracts, reports, and manuals, with easy retrieval when needed.
 - **Access Control**: Implement role-based access controls to ensure that sensitive content and resources are only accessible to authorized personnel.
 
 ### Daily Operations
-Leviathan PCRMS is designed to streamline daily operations and improve overall efficiency through features like:
+#### Leviathan PCRMS is designed to streamline daily operations and improve overall efficiency through features like:
 - **Task Management**: Assign, track, and manage tasks across your team to ensure timely and effective completion of daily responsibilities.
 - **Calendar Integration**: Keep all your important dates, inspections, meetings, and deadlines organized with our integrated calendar feature.
 - **Communication Tools**: Enhance collaboration and communication within your team and with external stakeholders through integrated messaging and notification systems.
 
 ## Why Choose Leviathan PCRMS?
 
-Leviathan PCRMS is the ideal solution for property managers and businesses looking to streamline both property and resource management. Our system is:
+#### Leviathan PCRMS is the ideal solution for property managers and businesses looking to streamline both property and resource management. Our system is:
 - **User-Friendly**: Designed with a focus on usability, Leviathan PCRMS is easy to navigate and use, even for those with minimal technical experience.
 - **Scalable**: Whether you’re managing a small number of properties or a large portfolio, Leviathan PCRMS can scale with your business needs.
 - **Secure**: We prioritize the security of your data, using advanced encryption and security protocols to protect your information.
