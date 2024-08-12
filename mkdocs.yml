@@ -4,7 +4,10 @@ nav:
   - 'Property':
     - 'Operations': property.md
   - 'Accountant': 
-    - 'Petty Cash': accountant.md
+    - 'Accounts':
+      - 'General': 'accounts/account.md'
+      - 'Create or Edit Account': accounts/create_edit_account.md
+    - 'Documents': accounts/document.md
   - Reservations: 
     - 'Reservations Dashboard': reservations.md
   - CRM:
