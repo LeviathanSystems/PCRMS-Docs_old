@@ -13,8 +13,16 @@ nav:
     - Dashboard: hr.md
     - Access Control: dac.md
   - Releases:
-    - '2.0.5': release_notes/2.0.5.md
-    - '2.0.4': release_notes/2.0.4.md
+    - 'PCRMS Desktop Office':
+      - '2.0.8': release_notes_weboffice/2.0.8.md
+      - '2.0.7': release_notes_weboffice/2.0.7.md
+      - '2.0.6': release_notes_weboffice/2.0.6.md
+      - '2.0.5': release_notes_weboffice/2.0.5.md
+      - '2.0.4': release_notes_weboffice/2.0.4.md
+    - 'Dashboard':
+      - '1.0.0': release_notes_dashboard/1.0.0.md
+    - 'Mobile Office':
+      - '1.0.0': release_notes_mobile_office/1.0.0.md
   - About: about.md
 
 theme:
