@@ -5,6 +5,11 @@ Welcome to our collection of recent articles! Below you'll find a list of the la
 
 ---
 
+### [How to Edit Elements in Physical Property](property/physical/edit_elements.md)
+_Last Updated: August 12, 2024 01:46 PM_
+
+---
+
 ### [Release Notes: Version 2.0.9](release_notes_weboffice/2.0.9.md)
 _Last Updated: August 12, 2024 01:31 PM_
 
@@ -27,11 +32,6 @@ _Last Updated: August 12, 2024 01:29 PM_
 
 ### [Release Notes: Version 2.0.5](release_notes_weboffice/2.0.5.md)
 _Last Updated: August 12, 2024 01:28 PM_
-
----
-
-### [How to edit Elements in physical property](property/physical/edit_elements.md)
-_Last Updated: August 12, 2024 01:27 PM_
 
 ---
 
