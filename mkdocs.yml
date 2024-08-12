@@ -8,6 +8,17 @@ nav:
         - 'General Info': property/physical/elements.md
         - 'Create Elements': property/physical/create_elements.md
         - 'Edit Elements': property/physical/edit_elements.md
+    - 'Listing':
+      - 'General Info': property/listing/general.md
+      - 'Calendar': 
+        - 'Price and Availability': property/listing/calendar/price_availabilty.md
+        - 'Rules': property/listing/calendar/rules.md
+    - 'Property Editor':
+      - 'General': property/editor/general.md
+      - 'OTA': property/editor/ota.md
+      - 'Picture': property/editor/picture.md
+      - 'Amenities': property/editor/ammenities.md
+      - 'Documents': property/editor/documents.md
   - 'Accountant': 
     - 'Accounts':
       - 'General': 'accounts/account.md'
