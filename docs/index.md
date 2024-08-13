@@ -5,6 +5,11 @@ Welcome to our collection of recent articles! Below you'll find a list of the la
 
 ---
 
+### [How to use use the calendar](property/listing/calendar/price_availabilty.md)
+_Last Updated: August 12, 2024 02:41 PM_
+
+---
+
 ### [Documents](property/editor/documents.md)
 _Last Updated: August 12, 2024 01:58 PM_
 
@@ -32,11 +37,6 @@ _Last Updated: August 12, 2024 01:58 PM_
 
 ### [Rules](property/listing/calendar/rules.md)
 _Last Updated: August 12, 2024 01:55 PM_
-
----
-
-### [Price_Availabilty](property/listing/calendar/price_availabilty.md)
-_Last Updated: August 12, 2024 01:54 PM_
 
 ---
 
