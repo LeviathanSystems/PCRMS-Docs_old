@@ -5,8 +5,18 @@ Welcome to our collection of recent articles! Below you'll find a list of the la
 
 ---
 
-### [How to use use the calendar](property/listing/calendar/price_availabilty.md)
-_Last Updated: August 12, 2024 02:41 PM_
+### [How to Use the Calendar](property/listing/calendar/price_availabilty.md)
+_Last Updated: August 13, 2024 02:29 PM_
+
+---
+
+### [Rules are under heavy development and may change at any time. Please check back often for updates.](property/listing/calendar/rules.md)
+_Last Updated: August 13, 2024 11:42 AM_
+
+---
+
+### [About Listing Properties](property/listing/general.md)
+_Last Updated: August 13, 2024 11:40 AM_
 
 ---
 
@@ -32,16 +42,6 @@ _Last Updated: August 12, 2024 01:58 PM_
 
 ### [Ammenities](property/editor/ammenities.md)
 _Last Updated: August 12, 2024 01:58 PM_
-
----
-
-### [Rules](property/listing/calendar/rules.md)
-_Last Updated: August 12, 2024 01:55 PM_
-
----
-
-### [About Listing Properties](property/listing/general.md)
-_Last Updated: August 12, 2024 01:52 PM_
 
 ---
 
