@@ -10,13 +10,15 @@
 - **My Leaves/Vacations:** View or request your leaves and vacations.
 
 ##### 1.1.2. Account
-- **Dashboard:** Access your account dashboard. For more details, check the [Account](/accounts/account) page.
+- **Dashboard:** Access your account dashboard. For more details, check the [Account](../accounts/account.md) page.
 
 ##### 1.1.3. Schedule
 - **Cleaning Schedule:** View the daily cleaning schedule.
 - **Jacuzzi Schedule:** View the daily jacuzzi schedule.
 - **Checklist Editor:** Access the checklist editor to manage the tasks that need to be completed before check-in.
-
+#### 1.2 Properties
+Here you can see a list of hierachies and properties that you have access to.
+For more details, check the [Properties](../property/general.md) page.
 ### 2. Top Bar (Top Side)
 #### My Profile
 - View your profile, change your password, or update your notification settings.

@@ -19,7 +19,7 @@ def extract_title(file_path):
 all_files = []
 for root, dirs, files in os.walk(posts_dir):
     for file in files:
-        if file == "index.md":
+        if file == "latest_news.md":
             continue  # Skip the index file
         if file.endswith(".md"):
             filepath = os.path.join(root, file)

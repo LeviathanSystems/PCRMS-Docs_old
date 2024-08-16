@@ -5,13 +5,13 @@ Welcome to our collection of recent articles! Below you'll find a list of the la
 
 ---
 
-### [📚 Recent Articles](latest_news.md)
-_Last Updated: August 16, 2024 09:18 AM_
+### [Getting Started with the Main UI](general/mainui.md)
+_Last Updated: August 16, 2024 09:23 AM_
 
 ---
 
-### [Getting Started with the Main UI](general/mainui.md)
-_Last Updated: August 16, 2024 09:08 AM_
+### [Index](index.md)
+_Last Updated: August 16, 2024 09:17 AM_
 
 ---
 
