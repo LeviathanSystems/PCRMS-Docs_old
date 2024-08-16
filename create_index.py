@@ -3,7 +3,7 @@ from datetime import datetime
 
 # Directory where your posts are stored
 posts_dir = "docs"
-index_file = os.path.join(posts_dir, "index.md")
+index_file = os.path.join(posts_dir, "latest_news.md")
 
 
 def extract_title(file_path):

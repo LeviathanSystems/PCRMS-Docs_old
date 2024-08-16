@@ -1,7 +1,7 @@
 # How to Use the Calendar
 
 ## Step 1: Open Any Listing Property
-![Listing Property Info](./../../images/listing_property_info.png)
+![Listing Property Info](../images/listing_property_info.png)
 
 ## Step 2: Click on the Calendar Icon
 ### **Note:** The Calendar Icon  is located on the left side of the screen at the top of the page.

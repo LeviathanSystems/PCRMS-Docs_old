@@ -1,6 +1,8 @@
 site_name: Leviathan PCRMS docs
 nav:
-  - Home: index.md
+  - 'Home':
+    - 'General UI concept': general/mainui.md
+    - 'Latest news': latest_news.md
   - 'Property':
     - 'General': property/general.md
     - 'Physical': 
