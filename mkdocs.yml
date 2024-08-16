@@ -12,6 +12,7 @@ nav:
         - 'Edit Elements': property/physical/edit_elements.md
     - 'Listing':
       - 'General Info': property/listing/general.md
+      - 'OTA': property/listing/ota.md
       - 'Calendar': 
         - 'Price and Availability': property/listing/calendar/price_availabilty.md
         - 'Rules': property/listing/calendar/rules.md
@@ -110,3 +111,6 @@ extra:
 markdown_extensions:
   - attr_list
   - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

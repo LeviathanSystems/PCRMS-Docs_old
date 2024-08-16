@@ -6,27 +6,19 @@ A **listing property** within the Leviathan PCRMS represents the information and
 
 ## Key Components of a Listing Property
 
-### 1. Reservations
+### Reservations
 
 #### The reservations section of a listing property is where all guest bookings are managed. This includes:
 - **Booking Details**: Information about current, past, and upcoming reservations, including guest names, stay dates, and payment status.
 - **Reservation Management**: Tools to modify, cancel, or add reservations manually, as well as handling special requests or notes related to each booking.
 - **Integration**: Seamless syncing of reservations from various OTAs and direct booking channels to ensure accurate availability and avoid double bookings.
 
-### 2. Calendar
+### Calendar
 
 #### The calendar is a crucial tool within the listing property, providing a visual representation of booking activity. Features include:
 - **Availability**: A clear view of booked and available dates, helping you manage open slots and optimize occupancy rates.
 - **Pricing**: Ability to adjust pricing dynamically based on demand, special events, or seasonal trends.
 - **Block Dates**: Option to block off dates for maintenance, owner stays, or other non-bookable periods, ensuring no accidental reservations are made during these times.
-
-### 3. OTA Options
-
-#### OTA (Online Travel Agency) options allow you to control how your listing property appears on various platforms like Airbnb, Booking.com, Expedia, and more. Key settings include:
-- **Channel Management**: Connect and manage multiple OTA accounts, ensuring consistent information across all platforms.
-- **Content and Photos**: Upload and update descriptions, amenities, and images to keep your listings attractive and up-to-date.
-- **Rate Plans**: Set different pricing strategies and rate plans tailored for each OTA, considering their unique audience and commission structures.
-- **Promotion Management**: Create and manage special offers, discounts, or last-minute deals to boost bookings during low-demand periods.
 
 ## Best Practices for Managing Listing Properties
 
