@@ -29,9 +29,12 @@ For more details, check the [Properties](../property/general.md) page.
 #### Search Function
 Leviathan PCRMS offers various search functions accessible using specific prefixes. Here is a list of available prefixes:
 
-- `RR` - Search for a Reservation Header ID.
-- `RS` - Search for a Reservation Stay ID.
-- `RC` - Search for a Reservation Channel ID from an ([OTA](../property/listing/ota.md)).
+  - `R` Search in Reservations data.
+    - Internal Reservation refernce number
+    - Internal Stay reference number
+    - ([OTA](../property/general.md)) channel reference number/text (for example: Booking.com using number only, Airbnb has mixed letters and numbers).
+  - `P` - Search in ([Physical](../property/listing/ota.md)) property number.
+
 
 ### 3. Main Area (Center)
 The main area is where the system displays different modules depending on what you have selected.
