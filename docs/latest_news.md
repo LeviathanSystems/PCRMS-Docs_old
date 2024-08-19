@@ -5,12 +5,12 @@ Welcome to our collection of recent articles! Below you'll find a list of the la
 
 ---
 
-### [About Listing Properties](property/listing/general.md)
-_Last Updated: August 16, 2024 10:58 AM_
+### [OTA](property/listing/ota.md)
+_Last Updated: August 16, 2024 11:26 AM_
 
 ---
 
-### [OTA](property/listing/ota.md)
+### [About Listing Properties](property/listing/general.md)
 _Last Updated: August 16, 2024 10:58 AM_
 
 ---
