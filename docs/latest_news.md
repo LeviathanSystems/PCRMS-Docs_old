@@ -5,8 +5,13 @@ Welcome to our collection of recent articles! Below you'll find a list of the la
 
 ---
 
+### [Release Notes: Version {version_str}](release_notes_weboffice/2.0.11.md)
+_Last Updated: August 26, 2024 12:39 PM_
+
+---
+
 ### [Getting Started with the Main UI](general/mainui.md)
-_Last Updated: August 19, 2024 09:14 AM_
+_Last Updated: August 19, 2024 09:18 AM_
 
 ---
 
@@ -46,11 +51,6 @@ _Last Updated: August 19, 2024 08:09 AM_
 ---
 
 ### [1.0.0](release_notes_mobile_office/1.0.0.md)
-_Last Updated: August 19, 2024 08:09 AM_
-
----
-
-### [OTA](property/listing/ota.md)
 _Last Updated: August 19, 2024 08:09 AM_
 
 ---

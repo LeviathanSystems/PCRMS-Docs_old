@@ -36,6 +36,7 @@ nav:
     - Access Control: dac.md
   - Releases:
     - 'PCRMS Desktop Office':
+      - '2.0.11': release_notes_weboffice/2.0.11.md
       - '2.0.10': release_notes_weboffice/2.0.10.md
       - '2.0.9': release_notes_weboffice/2.0.9.md
       - '2.0.8': release_notes_weboffice/2.0.8.md
