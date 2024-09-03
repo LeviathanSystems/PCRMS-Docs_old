@@ -4,3 +4,4 @@ bin/
 lib64
 include/
 pyvenv.cfg
+docs/latest_news.md

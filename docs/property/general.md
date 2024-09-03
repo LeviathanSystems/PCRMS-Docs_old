@@ -7,7 +7,7 @@ The **Leviathan PCRMS** (Property Channel and Revenue Management System) is desi
 ### Physical Property
 
 A physical property represents the actual, tangible location where your guests will stay. This could be a single unit within a building or a group of units. The physical property is defined within the system and can be organized as follows:
-- **Single Unit Property**: An individual unit within a building or complex.
+- **Single Unit Property**: An individual unit within a building or complex(Building).
 - **Group of Units**: Multiple units grouped together, often within the same building or complex.
 
 ### Listing Property
