@@ -1,0 +1,98 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Leviathan PCRMS Documentation'
+theme = 'relearn'
+
+# Google Analytics
+googleAnalytics = 'G-6M0W0QHNYH'
+
+[outputs]
+  home = ['HTML', 'RSS']
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    # line numbers in a table layout will shift if code is wrapping, so better
+    # use inline; besides that visually both layouts have the same look and behavior
+    lineNumbersInTable = false
+    noClasses = false
+
+[params]
+  # The author of the website
+  [params.author]
+    name = 'Leviathan Systems'
+  
+  # Shows a checkmark for visited pages in the menu
+  showVisitedLinks = true
+  
+  # Search configuration
+  [params.search]
+    disable = false
+  
+  # Disable next/prev buttons - can be overridden per page  
+  disableNextPrev = false
+  
+  # Order sections in menu by "weight" or "title" (default weight)
+  ordersectionsby = 'weight'
+  
+  # Change default color scheme with a variant one
+  # Relearn has several built-in variants: relearn-light, relearn-dark, relearn-bright
+  # You can also use: blue, green, red, auto (switches based on OS preference)
+  themeVariant = 'relearn-dark'
+  
+  # Custom color scheme
+  [params.style]
+    primaryColor = '#D4AF37'  # Your orange/gold color
+    backgroundColor = '#0B0C2A'  # Your default dark blue
+    secondaryColor = '#D4AF37'
+  
+  # Custom CSS
+  custom_css = ['css/custom.css']
+  
+  # Disable breadcrumb navigation
+  disableBreadcrumb = false
+  
+  # Disable term lists
+  disableTerminology = true
+  
+  # Collapsible menu items
+  collapsibleMenu = true
+  
+  # Additional menu entries
+  [[params.additionalContentLanguage]]
+    name = 'English'
+    weight = 1
+  
+  # Edit page link
+  editURL = 'https://github.com/LeviathanSystems/PCRMS-Docs_old/edit/master/content/'
+  
+  # Custom logo
+  [params.logo]
+    # Set logo path (relative to /static folder)
+    path = 'assets/brand/logo.svg'
+    # Set alt text for logo
+    alt = 'Leviathan PCRMS'
+    # Set logo width
+    width = '200px'
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    contentDir = 'content'
+    weight = 1
+    title = 'Leviathan PCRMS Documentation'
+    
+    [languages.en.params]
+      landingPageName = '<i class="fas fa-home"></i> Home'
+
+# Top navigation menu
+[[menu.shortcuts]]
+  name = '<i class="fas fa-globe"></i> Website'
+  url = 'https://leviathan.systems'
+  weight = 10
+
+[[menu.shortcuts]]
+  name = '<i class="fas fa-envelope"></i> Contact Support'
+  url = 'mailto:support@leviathan.systems'
+  weight = 20

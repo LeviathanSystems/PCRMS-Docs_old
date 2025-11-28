@@ -1,0 +1,12 @@
+<h3>Search Functionality</h3>
+
+<p>Located at the top of the page, the search bar allows you to quickly find specific records by:</p>
+<ul>
+<li>Name</li>
+<li>Email</li>
+<li>ID</li>{{ with .Get "extra" }}
+<li>{{ . }}</li>{{ end }}
+<li>Other visible fields</li>
+</ul>
+
+<p>Simply type in the search field and the results will filter automatically in real-time.</p>

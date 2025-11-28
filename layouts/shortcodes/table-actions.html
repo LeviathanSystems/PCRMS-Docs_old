@@ -1,0 +1,13 @@
+<h3>Action Buttons</h3>
+
+<p>Each row has action buttons on the right side:</p>
+
+<ul>
+<li><strong>Edit</strong> (Pencil icon) - Modify {{ with .Get "item" }}{{ . }}{{ else }}record{{ end }} information</li>
+<li><strong>Settings</strong> (Gear icon) - Configure {{ with .Get "item" }}{{ . }}{{ else }}item{{ end }} settings and permissions</li>
+<li><strong>Delete</strong> (Trash icon) - Remove the {{ with .Get "item" }}{{ . }}{{ else }}record{{ end }} from the system</li>
+</ul>
+
+<blockquote>
+<p><strong>⚠️ Delete with Caution</strong>: Deleting {{ with .Get "item" }}a {{ . }}{{ else }}a record{{ end }} is permanent. Consider disabling instead of deleting to maintain historical data.</p>
+</blockquote>

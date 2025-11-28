@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 8.3.0">
+    <meta name="description" content="Set up F-Droid to automatically receive PCRMS Office updates on your Android device">
+    <meta name="author" content="Leviathan Systems">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="F-Droid Setup for Automatic Updates :: Leviathan PCRMS Documentation">
+    <meta name="twitter:description" content="Set up F-Droid to automatically receive PCRMS Office updates on your Android device">
+    <meta property="og:url" content="/apps/install-android/fdroid-setup/index.html">
+    <meta property="og:site_name" content="Leviathan PCRMS Documentation">
+    <meta property="og:title" content="F-Droid Setup for Automatic Updates :: Leviathan PCRMS Documentation">
+    <meta property="og:description" content="Set up F-Droid to automatically receive PCRMS Office updates on your Android device">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Apps">
+    <meta property="article:tag" content="Apps">
+    <meta property="article:tag" content="Android">
+    <meta property="article:tag" content="Fdroid">
+    <meta property="article:tag" content="Installation">
+    <meta property="article:tag" content="Automatic-Updates">
+    <meta property="article:tag" content="Repository">
+    <meta itemprop="name" content="F-Droid Setup for Automatic Updates :: Leviathan PCRMS Documentation">
+    <meta itemprop="description" content="Set up F-Droid to automatically receive PCRMS Office updates on your Android device">
+    <meta itemprop="wordCount" content="1297">
+    <meta itemprop="keywords" content="Apps,Android,Fdroid,Installation,Automatic-Updates,Repository">
+    <title>F-Droid Setup for Automatic Updates :: Leviathan PCRMS Documentation</title>
+    <link href="/css/auto-complete/auto-complete.min.css?1764324428" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1764324428" defer></script>
+    <script src="/js/search-lunr.min.js?1764324428" defer></script>
+    <script src="/js/search.min.js?1764324428" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1764324428";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1764324428" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1764324428" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1764324428" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1764324428" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764324428" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764324428" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1764324428" rel="stylesheet">
+    <link href="/css/theme.min.css?1764324428" rel="stylesheet">
+    <link href="/css/format-html.min.css?1764324428" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/apps\/install-android\/fdroid-setup\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/css/custom.css?1764324428" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/apps/install-android/fdroid-setup/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#what-is-f-droid">What is F-Droid?</a></li>
+    <li><a href="#installation-process-overview">Installation Process Overview</a></li>
+    <li><a href="#step-1-install-f-droid">Step 1: Install F-Droid</a>
+      <ul>
+        <li><a href="#download-f-droid-app">Download F-Droid App</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-2-add-leviathan-pcrms-repository">Step 2: Add Leviathan PCRMS Repository</a>
+      <ul>
+        <li><a href="#add-the-repository">Add the Repository</a></li>
+        <li><a href="#enable-the-repository">Enable the Repository</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-3-install-pcrms-office">Step 3: Install PCRMS Office</a>
+      <ul>
+        <li><a href="#find-the-app">Find the App</a></li>
+        <li><a href="#install-the-app">Install the App</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-4-configure-automatic-updates">Step 4: Configure Automatic Updates</a>
+      <ul>
+        <li><a href="#enable-automatic-updates">Enable Automatic Updates</a></li>
+        <li><a href="#verify-auto-update-is-working">Verify Auto-Update is Working</a></li>
+      </ul>
+    </li>
+    <li><a href="#managing-updates">Managing Updates</a>
+      <ul>
+        <li><a href="#manual-update-check">Manual Update Check</a></li>
+        <li><a href="#update-notifications">Update Notifications</a></li>
+        <li><a href="#disable-auto-updates-for-specific-apps">Disable Auto-Updates for Specific Apps</a></li>
+      </ul>
+    </li>
+    <li><a href="#troubleshooting">Troubleshooting</a>
+      <ul>
+        <li><a href="#repository-wont-add">Repository Won&rsquo;t Add</a></li>
+        <li><a href="#app-not-found">App Not Found</a></li>
+        <li><a href="#updates-not-installing-automatically">Updates Not Installing Automatically</a></li>
+        <li><a href="#installation-failed">Installation Failed</a></li>
+      </ul>
+    </li>
+    <li><a href="#security--privacy">Security &amp; Privacy</a>
+      <ul>
+        <li><a href="#why-f-droid-is-secure">Why F-Droid is Secure</a></li>
+        <li><a href="#repository-fingerprint">Repository Fingerprint</a></li>
+        <li><a href="#best-practices">Best Practices</a></li>
+      </ul>
+    </li>
+    <li><a href="#benefits-of-using-f-droid">Benefits of Using F-Droid</a></li>
+    <li><a href="#support">Support</a>
+      <ul>
+        <li><a href="#f-droid-resources">F-Droid Resources</a></li>
+        <li><a href="#pcrms-support">PCRMS Support</a></li>
+      </ul>
+    </li>
+    <li><a href="#next-steps">Next Steps</a></li>
+    <li><a href="#frequently-asked-questions">Frequently Asked Questions</a>
+      <ul>
+        <li><a href="#do-i-need-to-keep-f-droid-open-for-updates">Do I need to keep F-Droid open for updates?</a></li>
+        <li><a href="#will-automatic-updates-overwrite-my-data">Will automatic updates overwrite my data?</a></li>
+        <li><a href="#can-i-use-both-f-droid-and-apk-installation">Can I use both F-Droid and APK installation?</a></li>
+        <li><a href="#how-much-data-do-updates-use">How much data do updates use?</a></li>
+        <li><a href="#is-f-droid-safe">Is F-Droid safe?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">Leviathan PCRMS Documentation</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/apps/index.html"><span itemprop="name">Apps</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">F-Droid Setup for Automatic Updates</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/apps/index.html" title="Apps (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/apps/install-ios/index.html" title="Install on iOS/Apple Devices (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable apps" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+<div class="R-taxonomy taxonomy-tags cstyle tags" title="Tags" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/tags/android/index.html">Android</a></li>
+    <li><a class="term-link" href="/tags/apps/index.html">Apps</a></li>
+    <li><a class="term-link" href="/tags/automatic-updates/index.html">Automatic-Updates</a></li>
+    <li><a class="term-link" href="/tags/fdroid/index.html">Fdroid</a></li>
+    <li><a class="term-link" href="/tags/installation/index.html">Installation</a></li>
+    <li><a class="term-link" href="/tags/repository/index.html">Repository</a></li>
+  </ul>
+</div>
+  </header>
+
+<h1 id="f-droid-setup-for-automatic-updates">F-Droid Setup for Automatic Updates</h1>
+
+<h1 id="f-droid-setup-for-automatic-updates">F-Droid Setup for Automatic Updates<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>F-Droid is an installable catalog of free and open-source applications for Android. By installing PCRMS Office through F-Droid, you&rsquo;ll receive automatic updates whenever a new version is released.</p>
+<h2 id="what-is-f-droid">What is F-Droid?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>F-Droid is a trusted, open-source alternative to the Google Play Store. It offers:</p>
+<ul>
+<li><strong>Automatic Updates</strong>: Apps update in the background without manual intervention</li>
+<li><strong>Privacy Focused</strong>: No tracking or personal data collection</li>
+<li><strong>Security</strong>: All apps are verified and built from source code</li>
+<li><strong>Transparency</strong>: Complete visibility into what apps do</li>
+</ul>
+<h2 id="installation-process-overview">Installation Process Overview<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ol>
+<li>Install the F-Droid app on your Android device</li>
+<li>Add the Leviathan PCRMS repository to F-Droid</li>
+<li>Install PCRMS Office from the repository</li>
+<li>Configure automatic updates</li>
+</ol>
+<hr>
+<h2 id="step-1-install-f-droid">Step 1: Install F-Droid<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="download-f-droid-app">Download F-Droid App<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li>
+<p><strong>Open Your Browser</strong></p>
+<ul>
+<li>Launch Chrome, Firefox, or your preferred browser on your Android device</li>
+</ul>
+</li>
+<li>
+<p><strong>Visit F-Droid Website</strong></p>
+<ul>
+<li>Navigate to: <a href="https://f-droid.org" rel="external">https://f-droid.org</a></li>
+<li>Tap the <strong>Download F-Droid</strong> button</li>
+<li>The <code>F-Droid.apk</code> file will download</li>
+</ul>
+</li>
+<li>
+<p><strong>Enable Installation from Unknown Sources</strong></p>
+<ul>
+<li>Open <strong>Settings</strong> on your device</li>
+<li>Go to <strong>Security</strong> or <strong>Apps &amp; Notifications</strong></li>
+<li>Find <strong>Install unknown apps</strong> or <strong>Special app access</strong></li>
+<li>Select your <strong>browser</strong> (Chrome, Firefox, etc.)</li>
+<li>Enable <strong>Allow from this source</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Install F-Droid</strong></p>
+<ul>
+<li>Open your <strong>Downloads</strong> folder</li>
+<li>Tap the downloaded <code>F-Droid.apk</code> file</li>
+<li>Tap <strong>Install</strong></li>
+<li>Tap <strong>Open</strong> when installation completes</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="step-2-add-leviathan-pcrms-repository">Step 2: Add Leviathan PCRMS Repository<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>F-Droid uses repositories to organize apps. You&rsquo;ll need to add the Leviathan repository to access PCRMS Office.</p>
+<p><strong>Repository URL</strong>: <code>https://fdroid.leviathan.systems/repo/</code></p>
+<h3 id="add-the-repository">Add the Repository<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li>
+<p><strong>Open F-Droid App</strong></p>
+<ul>
+<li>Launch the F-Droid app you just installed</li>
+</ul>
+</li>
+<li>
+<p><strong>Access Settings</strong></p>
+<ul>
+<li>Tap the <strong>menu icon</strong> (three horizontal lines) in the top-left corner</li>
+<li>Select <strong>Settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Navigate to Repositories</strong></p>
+<ul>
+<li>Scroll down and tap <strong>Repositories</strong></li>
+<li>You&rsquo;ll see a list of enabled repositories</li>
+</ul>
+</li>
+<li>
+<p><strong>Add New Repository</strong></p>
+<ul>
+<li>Tap the <strong>+</strong> icon (or <strong>Add Repository</strong>) in the top-right corner</li>
+<li>You&rsquo;ll see two fields:
+<ul>
+<li><strong>Repository URL</strong>: Enter <code>https://fdroid.leviathan.systems/repo/</code></li>
+<li><strong>Fingerprint</strong>: Enter the fingerprint if provided (optional but recommended for security)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Save the Repository</strong></p>
+<ul>
+<li>Tap <strong>Add</strong> or <strong>OK</strong></li>
+<li>F-Droid will fetch the repository information</li>
+</ul>
+</li>
+</ol>
+<h3 id="enable-the-repository">Enable the Repository<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li>
+<p><strong>Verify Repository is Enabled</strong></p>
+<ul>
+<li>In the <strong>Repositories</strong> list, ensure the Leviathan PCRMS repository has a checkmark</li>
+<li>If not, tap the repository name and toggle it ON</li>
+</ul>
+</li>
+<li>
+<p><strong>Update Repository</strong></p>
+<ul>
+<li>Go back to the F-Droid main screen</li>
+<li>Pull down to refresh or tap the <strong>Update</strong> icon</li>
+<li>F-Droid will sync the repository and download app information</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="step-3-install-pcrms-office">Step 3: Install PCRMS Office<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Now that the repository is added, you can install PCRMS Office.</p>
+<h3 id="find-the-app">Find the App<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li>
+<p><strong>Search for PCRMS Office</strong></p>
+<ul>
+<li>In the F-Droid app, tap the <strong>search icon</strong> (magnifying glass)</li>
+<li>Type &ldquo;PCRMS Office&rdquo;</li>
+<li>Tap on the search result</li>
+</ul>
+</li>
+<li>
+<p><strong>View App Details</strong></p>
+<ul>
+<li>You&rsquo;ll see the app description, version, permissions, and other details</li>
+<li>Review the information to confirm it&rsquo;s the official PCRMS Office app</li>
+</ul>
+</li>
+</ol>
+<h3 id="install-the-app">Install the App<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li>
+<p><strong>Tap Install</strong></p>
+<ul>
+<li>On the app details page, tap the <strong>Install</strong> button</li>
+<li>F-Droid will download the APK</li>
+</ul>
+</li>
+<li>
+<p><strong>Confirm Installation</strong></p>
+<ul>
+<li>You may need to grant F-Droid permission to install apps</li>
+<li>If prompted, enable <strong>Allow from this source</strong> for F-Droid</li>
+<li>Tap <strong>Install</strong> in the installation prompt</li>
+</ul>
+</li>
+<li>
+<p><strong>Wait for Installation</strong></p>
+<ul>
+<li>The installation process will complete</li>
+<li>You&rsquo;ll see a success message</li>
+</ul>
+</li>
+<li>
+<p><strong>Open the App</strong></p>
+<ul>
+<li>Tap <strong>Open</strong> or find PCRMS Office in your app drawer</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="step-4-configure-automatic-updates">Step 4: Configure Automatic Updates<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>F-Droid can automatically check for and install app updates.</p>
+<h3 id="enable-automatic-updates">Enable Automatic Updates<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li>
+<p><strong>Open F-Droid Settings</strong></p>
+<ul>
+<li>Launch the F-Droid app</li>
+<li>Tap the <strong>menu icon</strong> → <strong>Settings</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Configure Auto-Update Settings</strong></p>
+<ul>
+<li>Scroll to the <strong>Automatic Updates</strong> section</li>
+<li>Enable the following options:
+<ul>
+<li><strong>Automatically fetch updates</strong>: Checks for new versions regularly</li>
+<li><strong>Automatically install updates</strong>: Installs updates without confirmation</li>
+<li><strong>Only on Wi-Fi</strong>: Recommended to save mobile data</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Set Update Interval</strong> (Optional)</p>
+<ul>
+<li>Choose how often F-Droid checks for updates</li>
+<li>Recommended: Every 24 hours or twice daily</li>
+</ul>
+</li>
+<li>
+<p><strong>Background Data</strong></p>
+<ul>
+<li>Ensure F-Droid is allowed to use background data</li>
+<li>Go to <strong>Settings</strong> → <strong>Apps</strong> → <strong>F-Droid</strong> → <strong>Data usage</strong></li>
+<li>Enable <strong>Background data</strong></li>
+</ul>
+</li>
+</ol>
+<h3 id="verify-auto-update-is-working">Verify Auto-Update is Working<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li>
+<p><strong>Check for Updates Manually</strong></p>
+<ul>
+<li>Open F-Droid</li>
+<li>Pull down to refresh</li>
+<li>Check if any updates are available for PCRMS Office</li>
+</ul>
+</li>
+<li>
+<p><strong>View Pending Updates</strong></p>
+<ul>
+<li>Tap the <strong>menu icon</strong> → <strong>Updates</strong></li>
+<li>You&rsquo;ll see a list of apps with available updates</li>
+<li>Updates will install automatically based on your settings</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="managing-updates">Managing Updates<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="manual-update-check">Manual Update Check<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Even with automatic updates enabled, you can manually check:</p>
+<ol>
+<li>Open F-Droid</li>
+<li>Go to <strong>Updates</strong> from the menu</li>
+<li>Pull down to refresh</li>
+<li>Updates will appear if available</li>
+</ol>
+<h3 id="update-notifications">Update Notifications<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>F-Droid can notify you when updates are available:</p>
+<ol>
+<li>Go to <strong>Settings</strong> → <strong>Notifications</strong></li>
+<li>Enable <strong>Notify when updates are available</strong></li>
+<li>You&rsquo;ll receive a notification when PCRMS Office has an update</li>
+</ol>
+<h3 id="disable-auto-updates-for-specific-apps">Disable Auto-Updates for Specific Apps<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>If you want to control PCRMS Office updates manually:</p>
+<ol>
+<li>Open PCRMS Office in F-Droid</li>
+<li>Tap the <strong>menu icon</strong> (three dots)</li>
+<li>Select <strong>Settings</strong></li>
+<li>Disable <strong>Automatic updates</strong> for this app only</li>
+</ol>
+<hr>
+<h2 id="troubleshooting">Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="repository-wont-add">Repository Won&rsquo;t Add<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Check URL</strong>: Verify you&rsquo;re using the correct repository URL</li>
+<li><strong>Internet Connection</strong>: Ensure you have a stable internet connection</li>
+<li><strong>Clear Cache</strong>: Go to F-Droid Settings → Clear cache</li>
+<li><strong>Fingerprint Mismatch</strong>: If you get a fingerprint error, verify the fingerprint with your administrator</li>
+</ul>
+<h3 id="app-not-found">App Not Found<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Update Repository</strong>: Pull down to refresh the repository list</li>
+<li><strong>Check Repository is Enabled</strong>: Go to Settings → Repositories and verify Leviathan PCRMS is checked</li>
+<li><strong>Contact Administrator</strong>: The app may not be published yet</li>
+</ul>
+<h3 id="updates-not-installing-automatically">Updates Not Installing Automatically<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Check Settings</strong>: Verify automatic update settings are enabled</li>
+<li><strong>Battery Optimization</strong>: Some devices restrict background processes
+<ul>
+<li>Go to <strong>Settings</strong> → <strong>Battery</strong> → <strong>Battery optimization</strong></li>
+<li>Find F-Droid and set to <strong>Don&rsquo;t optimize</strong></li>
+</ul>
+</li>
+<li><strong>Storage Space</strong>: Ensure you have enough free space for updates</li>
+<li><strong>Background Data</strong>: Verify F-Droid can use background data</li>
+</ul>
+<h3 id="installation-failed">Installation Failed<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Clear F-Droid Cache</strong>: Settings → Clear cache</li>
+<li><strong>Reinstall F-Droid</strong>: Uninstall and reinstall the F-Droid app</li>
+<li><strong>Check Permissions</strong>: Ensure F-Droid has permission to install apps</li>
+</ul>
+<hr>
+<h2 id="security--privacy">Security &amp; Privacy<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="why-f-droid-is-secure">Why F-Droid is Secure<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Open Source</strong>: All code is publicly auditable</li>
+<li><strong>Reproducible Builds</strong>: Apps are built from source in a verifiable way</li>
+<li><strong>No Tracking</strong>: F-Droid doesn&rsquo;t collect personal data</li>
+<li><strong>Signature Verification</strong>: Apps are signed and verified</li>
+</ul>
+<h3 id="repository-fingerprint">Repository Fingerprint<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>The repository fingerprint is a security feature that ensures you&rsquo;re connecting to the authentic Leviathan repository. Always verify the fingerprint with your administrator when adding the repository.</p>
+<h3 id="best-practices">Best Practices<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ol>
+<li><strong>Only Add Trusted Repositories</strong>: Only add the official Leviathan PCRMS repository</li>
+<li><strong>Verify Fingerprints</strong>: Always use the fingerprint if provided</li>
+<li><strong>Keep F-Droid Updated</strong>: Update F-Droid itself when new versions are available</li>
+<li><strong>Review Permissions</strong>: Check app permissions before installation</li>
+</ol>
+<hr>
+<h2 id="benefits-of-using-f-droid">Benefits of Using F-Droid<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Benefit</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Automatic Updates</strong></td>
+          <td>Always have the latest features and security patches</td>
+      </tr>
+      <tr>
+          <td><strong>No Manual Downloads</strong></td>
+          <td>Updates happen in the background</td>
+      </tr>
+      <tr>
+          <td><strong>Open Source</strong></td>
+          <td>Transparent and trustworthy</td>
+      </tr>
+      <tr>
+          <td><strong>Privacy Focused</strong></td>
+          <td>No tracking or ads</td>
+      </tr>
+      <tr>
+          <td><strong>Multiple Apps</strong></td>
+          <td>Manage all your F-Droid apps in one place</td>
+      </tr>
+      <tr>
+          <td><strong>Update Notifications</strong></td>
+          <td>Stay informed about new versions</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="support">Support<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="f-droid-resources">F-Droid Resources<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>F-Droid Documentation</strong>: <a href="https://f-droid.org/docs" rel="external">https://f-droid.org/docs</a></li>
+<li><strong>F-Droid Forum</strong>: Community support and discussions</li>
+</ul>
+<h3 id="pcrms-support">PCRMS Support<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>If you have issues with PCRMS Office:</p>
+<ul>
+<li><strong>Email</strong>: <a href="mailto:support@leviathan.systems" rel="external">support@leviathan.systems</a></li>
+<li><strong>Documentation</strong>: Visit our <a href="/support/index.html">Support section</a></li>
+<li><strong>Android Installation</strong>: See the <a href="/apps/index.html">Android Installation Guide</a></li>
+</ul>
+<hr>
+<h2 id="next-steps">Next Steps<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<ul>
+<li><strong>Launch the App</strong>: Open PCRMS Office and sign in with your credentials</li>
+<li><strong>Explore Features</strong>: Check out the <a href="/features/index.html">Features section</a> to learn what you can do</li>
+<li><strong>Enable Notifications</strong>: Configure push notifications for important updates</li>
+<li><strong>Get Help</strong>: Visit our <a href="/support/index.html">Support section</a> for guides and FAQs</li>
+</ul>
+<hr>
+<h2 id="frequently-asked-questions">Frequently Asked Questions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="do-i-need-to-keep-f-droid-open-for-updates">Do I need to keep F-Droid open for updates?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>No, F-Droid works in the background. Updates will check and install even when the app is closed.</p>
+<h3 id="will-automatic-updates-overwrite-my-data">Will automatic updates overwrite my data?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>No, updates preserve all your app data and settings. Your login information and local data remain intact.</p>
+<h3 id="can-i-use-both-f-droid-and-apk-installation">Can I use both F-Droid and APK installation?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>We recommend choosing one method. If you install via APK first, you can switch to F-Droid by installing from the repository (it will recognize the existing installation).</p>
+<h3 id="how-much-data-do-updates-use">How much data do updates use?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>PCRMS Office updates typically range from 20-50 MB. Use the &ldquo;Only on Wi-Fi&rdquo; setting to avoid using mobile data.</p>
+<h3 id="is-f-droid-safe">Is F-Droid safe?<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Yes, F-Droid is widely trusted in the open-source community. All apps are verified, and the source code is publicly available for review.</p>
+
+  <footer class="footline">
+<div class="R-taxonomy taxonomy-categories cstyle" title="Categories" style="--VARIABLE-TAGS-BG-color: var(--INTERNAL-TAG-BG-color);">
+  <i class="fa-fw fas fa-layer-group"></i>
+  <ul>
+    <li><a class="term-link" href="/categories/android/index.html">Android</a></li>
+    <li><a class="term-link" href="/categories/installation/index.html">Installation</a></li>
+    <li><a class="term-link" href="/categories/mobile-apps/index.html">Mobile Apps</a></li>
+  </ul>
+</div>
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+          <a id="R-logo" class="R-default" href="/index.html">
+            <div class="logo-title">Leviathan PCRMS Documentation</div>
+          </a>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/docs/index.html"><a class="padding" href="/docs/index.html">Basics</a><ul id="R-subsections-b5fa667da3c6d162416dac7e8c63bf8a" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/features/index.html"><a class="padding" href="/features/index.html">Features</a><ul id="R-subsections-b10716f0f6bfde868629eb037eee49bd" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/support/index.html"><a class="padding" href="/support/index.html">Support</a><ul id="R-subsections-caa68563dfb61577c2c4699e1aa63010" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-url="/apps/index.html"><a class="padding" href="/apps/index.html">Apps</a><ul id="R-subsections-6cac65933f4c56dceedbfff7198031f4" class="collapsible-menu">
+            <li class="active " data-nav-url="/apps/install-android/fdroid-setup/index.html"><a class="padding" href="/apps/install-android/fdroid-setup/index.html">F-Droid Setup for Automatic Updates</a></li>
+            <li class="" data-nav-url="/apps/install-ios/index.html"><a class="padding" href="/apps/install-ios/index.html">Install on iOS/Apple Devices</a></li>
+            <li class="" data-nav-url="/apps/install-android/index.html"><a class="padding" href="/apps/install-android/index.html">Install on Android Devices</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="https://leviathan.systems"><a class="padding" href="https://leviathan.systems" rel="external"><i class="fas fa-globe"></i> Website</a></li>
+            <li class="" data-nav-url="mailto:support@leviathan.systems"><a class="padding" href="mailto:support@leviathan.systems" rel="external"><i class="fas fa-envelope"></i> Contact Support</a></li>
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1764324428" defer></script>
+    <script src="/js/theme.min.js?1764324428" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

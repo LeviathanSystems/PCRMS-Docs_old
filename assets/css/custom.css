@@ -1,0 +1,119 @@
+:root {
+    --PRIMARY-color: #D4AF37; /* Your orange/gold color */
+    --SECONDARY-color: #D4AF37; /* Your secondary color */
+    --MAIN-BG-color: #0B0C2A; /* Your default dark blue */
+    --MAIN-TEXT-color: #e0e0e0; /* Light text for dark background */
+    --MAIN-LINK-color: #D4AF37; /* Links in gold */
+    --MAIN-LINK-HOVER-color: #f0c147; /* Lighter gold on hover */
+    --MAIN-ANCHOR-color: #D4AF37;
+    
+    /* Menu colors */
+    --MENU-HOME-LINK-color: #D4AF37;
+    --MENU-HOME-LINK-HOVER-color: #f0c147;
+    --MENU-HEADER-BG-color: #0B0C2A;
+    --MENU-HEADER-BORDER-color: #D4AF37;
+    --MENU-SEARCH-color: #e0e0e0;
+    --MENU-SEARCH-BG-color: #1a1d3a;
+    --MENU-SEARCH-BORDER-color: #D4AF37;
+    --MENU-SECTIONS-ACTIVE-BG-color: rgba(212, 175, 55, 0.2);
+    --MENU-SECTIONS-BG-color: #0B0C2A;
+    --MENU-SECTIONS-LINK-color: #e0e0e0;
+    --MENU-SECTIONS-LINK-HOVER-color: #D4AF37;
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #D4AF37;
+    --MENU-SECTION-HR-color: rgba(212, 175, 55, 0.3);
+    --MENU-VISITED-color: #D4AF37;
+    
+    /* Content area */
+    --INTERNAL-BOX-BG-color: #0B0C2A;
+    
+    /* Box colors */
+    --BOX-CAPTION-color: #e0e0e0;
+    --BOX-BG-color: #1a1d3a;
+    --BOX-TEXT-color: #e0e0e0;
+    
+    /* Code blocks */
+    --CODE-BLOCK-BG-color: #1a1d3a;
+    --CODE-BLOCK-BORDER-color: #D4AF37;
+    --CODE-INLINE-BG-color: #1a1d3a;
+    --CODE-INLINE-BORDER-color: rgba(212, 175, 55, 0.3);
+    --CODE-INLINE-color: #D4AF37;
+}
+
+body {
+    background-color: var(--MAIN-BG-color) !important;
+    color: var(--MAIN-TEXT-color) !important;
+}
+
+/* Main content area */
+#body-inner {
+    background-color: var(--MAIN-BG-color) !important;
+}
+
+#body {
+    background-color: var(--MAIN-BG-color) !important;
+}
+
+/* Sidebar menu styling */
+#sidebar {
+    background-color: var(--MENU-SECTIONS-BG-color) !important;
+}
+
+/* Home/active item in sidebar with yellow background */
+#sidebar ul li.active > a,
+#sidebar ul li a.active {
+    background-color: #D4AF37 !important;
+    color: #0B0C2A !important;
+    font-weight: 600;
+}
+
+/* Regular menu items */
+#sidebar ul li > a {
+    color: var(--MENU-SECTIONS-LINK-color);
+}
+
+#sidebar ul li > a:hover {
+    color: var(--MENU-SECTIONS-LINK-HOVER-color);
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
+/* Search box */
+#sidebar #search-by input {
+    background-color: var(--MENU-SEARCH-BG-color);
+    border: 1px solid var(--MENU-SEARCH-BORDER-color);
+    color: var(--MENU-SEARCH-color);
+}
+
+/* Links */
+a {
+    color: var(--MAIN-LINK-color);
+}
+
+a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+}
+
+/* Breadcrumb */
+#topbar {
+    background-color: #0B0C2A;
+}
+
+#breadcrumbs a {
+    color: #D4AF37;
+}
+
+/* Section headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #e0e0e0;
+}
+
+/* Menu section headers */
+.menu-section-title {
+    color: var(--PRIMARY-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid var(--PRIMARY-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
