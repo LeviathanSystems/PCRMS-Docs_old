@@ -6,9 +6,12 @@ on:
     branches:
       - master
     paths:
-      - 'docs/**'
-      - 'requirements.txt'
-      - 'mkdocs.yml'
+      - 'content/**'
+      - 'static/**'
+      - 'layouts/**'
+      - 'assets/**'
+      - 'hugo.toml'
+      - 'themes/**'
 
 # These permissions are required for it to work
 permissions:
@@ -31,24 +34,27 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Setup Python 3.x
-        uses: actions/setup-python@v4
         with:
-          python_version: '3.x' # Uses latest 3.x version.
-      - name: Install dependencies
-        # Alternatively: pip install mkdocs
-        run: pip install -r requirements.txt
-      - name: Generate Latest news
-        run: python3 ./create_index.py
-      - name: Build Docs
-        run: mkdocs build
+          submodules: recursive  # Fetch Hugo themes as submodules
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+      
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.152.2'
+          extended: true  # Use extended version for SCSS/SASS support
+      
+      - name: Build Hugo Site
+        run: hugo --minify
+      
       - name: Configure GitHub Pages
-        # I have no idea if this actually needed...
         uses: actions/configure-pages@v3
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: 'site/' # MkDocs builds to site/ by default
+          path: 'public/' # Hugo builds to public/ by default
+      
       - name: Deploy to GitHub Pages
         id: deployment # This is required for environment
         uses: actions/deploy-pages@v2
