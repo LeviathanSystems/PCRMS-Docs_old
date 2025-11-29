@@ -30,6 +30,8 @@ There are two ways to install PCRMS Office on Android:
 
 This method is straightforward but requires manual updates when new versions are released.
 
+**Direct Download Link**: [http://fdroid.leviathan.systems/repo/PCRMSOffice.apk](http://fdroid.leviathan.systems/repo/PCRMSOffice.apk)
+
 ### Step 1: Enable Installation from Unknown Sources
 
 Before installing an APK file, you need to allow your device to install apps from sources other than the Google Play Store.
@@ -53,8 +55,8 @@ Before installing an APK file, you need to allow your device to install apps fro
 
 1. **Download the File**
    - Open your browser on your Android device
-   - Navigate to your company's download portal or the link provided by your administrator
-   - Download the `PCRMSOffice.apk` file
+   - Navigate to: [http://fdroid.leviathan.systems/repo/PCRMSOffice.apk](http://fdroid.leviathan.systems/repo/PCRMSOffice.apk)
+   - The `PCRMSOffice.apk` file will begin downloading automatically
    - Wait for the download to complete
 
 2. **Locate the Downloaded File**
@@ -91,7 +93,7 @@ Before installing an APK file, you need to allow your device to install apps fro
 
 When a new version is released:
 
-1. Download the new APK file
+1. Download the new APK file from: [http://fdroid.leviathan.systems/repo/PCRMSOffice.apk](http://fdroid.leviathan.systems/repo/PCRMSOffice.apk)
 2. Tap to install (it will update your existing installation)
 3. Your data and settings will be preserved
 
